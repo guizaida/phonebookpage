@@ -89,7 +89,7 @@
           this.info = response;
           alert(response.data.msg);
           if (response.data.msg == '成功註冊') {
-            location.href='/' 
+            location.href='/phonebookpage' 
           }
         });
         },
@@ -106,7 +106,7 @@
       methods: {
         unregister() {
           alert('取消註冊');
-          location.href='login.html' 
+          location.href='/phonebookpage' 
           }
         }
         });
