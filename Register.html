@@ -54,7 +54,7 @@
           </form>
           <div id="unapp" class="row">
             <div class="col" style="margin-top: 15px;">
-              <button v-on:click="unregister()" class="btn btn-primary btn-block">UnRegister </button>
+              <button onclick="javascript:location.href='/phonebookpage'" class="btn btn-primary btn-block">Cancel</button>
             </div>
           </div>
           <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
@@ -97,18 +97,5 @@
       }
       
   });
-</script>
-<script>
-  var unapp = new Vue({
-      el: '#unapp',
-      data: {
-      },
-      methods: {
-        unregister() {
-          alert('取消註冊');
-          location.href='/phonebookpage' 
-          }
-        }
-        });
 </script>
 </html>
